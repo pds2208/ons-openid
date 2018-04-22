@@ -10,7 +10,7 @@ organization := "uk.gov.ons"
 name := "ONS OpenID"
 version := "0.1"
 maintainer := "Paul Soule <paul.soule@ext.ons.gov.uk>"
-description := "A demo how to use OpenID from a REST service"
+description := "A demo how to use OpenID to secure a REST service"
 organizationHomepage := Some(url("http://www.ons.gov.uk"))
 
 /*
@@ -20,7 +20,8 @@ libraryDependencies ++= Seq(
   "org.springframework.boot" % "spring-boot-starter-web" % "2.0.1.RELEASE"
     exclude("org.springframework.boot", "spring-boot-starter-tomcat"),
   "org.springframework.boot" % "spring-boot-configuration-processor" % "2.0.1.RELEASE",
-  "org.springframework.boot" % "spring-boot-starter-jetty" % "2.0.1.RELEASE"
+  "org.springframework.boot" % "spring-boot-starter-jetty" % "2.0.1.RELEASE",
+  "org.springframework.boot" % "spring-boot-starter-actuator" % "2.0.1.RELEASE"
 )
 
 /*
