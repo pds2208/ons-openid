@@ -1,7 +1,7 @@
 /*
   General Scala attributes
  */
-scalaVersion := "2.12.1"
+scalaVersion := "2.12.5"
 
 /*
   General project attributes
@@ -17,7 +17,8 @@ organizationHomepage := Some(url("http://www.ons.gov.uk"))
   Project dependencies
  */
 libraryDependencies ++= Seq(
-  "org.springframework.boot" % "spring-boot-starter-web" % "2.0.1.RELEASE" exclude("org.springframework.boot", "spring-boot-starter-tomcat"),
+  "org.springframework.boot" % "spring-boot-starter-web" % "2.0.1.RELEASE"
+    exclude("org.springframework.boot", "spring-boot-starter-tomcat"),
   "org.springframework.boot" % "spring-boot-configuration-processor" % "2.0.1.RELEASE",
   "org.springframework.boot" % "spring-boot-starter-jetty" % "2.0.1.RELEASE"
 )
