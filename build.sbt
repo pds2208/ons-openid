@@ -17,8 +17,9 @@ organizationHomepage := Some(url("http://www.ons.gov.uk"))
   Project dependencies
  */
 libraryDependencies ++= Seq(
-  "org.springframework.boot" % "spring-boot-starter-web" % "1.5.4.RELEASE",
-  "org.springframework.boot" % "spring-boot-configuration-processor" % "1.5.4.RELEASE"
+  "org.springframework.boot" % "spring-boot-starter-web" % "2.0.1.RELEASE" exclude("org.springframework.boot", "spring-boot-starter-tomcat"),
+  "org.springframework.boot" % "spring-boot-configuration-processor" % "2.0.1.RELEASE",
+  "org.springframework.boot" % "spring-boot-starter-jetty" % "2.0.1.RELEASE"
 )
 
 /*
@@ -28,8 +29,8 @@ libraryDependencies ++= Seq(
 // enable the Java app packaging archetype and Ash script (for Alpine Linux, doesn't have Bash)
 enablePlugins(JavaAppPackaging, AshScriptPlugin)
 
-// set the main entrypoint to the application that is used in startup scripts
-mainClass in Compile := Some("de.codecentric.microservice.MyServiceApplication")
+// set the main entry point to the application that is used in startup scripts
+mainClass in Compile := Some("gov.uk.ons.registers.microservice.MyServiceApplication")
 
 // the Docker image to base on (alpine is smaller than the debian based one (120 vs 650 MB)
 dockerBaseImage := "openjdk:8-jre-alpine"

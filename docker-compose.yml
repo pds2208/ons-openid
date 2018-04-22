@@ -1,6 +1,6 @@
 version: '2'
 services:
   demoservice:
-    image: springbootscala:latest
+    image: ons-openid:latest
     ports:
       - "8080:8080"
