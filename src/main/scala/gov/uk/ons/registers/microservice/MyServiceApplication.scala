@@ -1,4 +1,4 @@
-package de.codecentric.microservice
+package gov.uk.ons.registers.microservice
 
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication

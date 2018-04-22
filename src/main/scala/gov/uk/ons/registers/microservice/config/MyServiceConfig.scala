@@ -1,4 +1,4 @@
-package de.codecentric.microservice.config
+package gov.uk.ons.registers.microservice.config
 
 import org.springframework.boot.context.properties.ConfigurationProperties
 import org.springframework.stereotype.Component

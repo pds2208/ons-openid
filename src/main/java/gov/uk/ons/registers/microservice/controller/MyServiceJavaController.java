@@ -1,6 +1,6 @@
-package de.codecentric.microservice.controller;
+package gov.uk.ons.registers.microservice.controller;
 
-import de.codecentric.microservice.service.MyService;
+import gov.uk.ons.registers.microservice.service.MyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;

@@ -6,12 +6,12 @@ scalaVersion := "2.12.1"
 /*
   General project attributes
  */
-organization := "de.codecentric"
-name := "SpringBootScala"
+organization := "uk.gov.ons"
+name := "ONS OpenID"
 version := "0.1"
-maintainer := "Björn Jacobs <bjoern.jacobs@codecentric.de>"
-description := "A demo how to use Spring Boot with Scala for building a basic microservice"
-organizationHomepage := Some(url("http://www.codecentric.de"))
+maintainer := "Paul Soule <paul.soule@ext.ons.gov.uk>"
+description := "A demo how to use OpenID from a REST service"
+organizationHomepage := Some(url("http://www.ons.gov.uk"))
 
 /*
   Project dependencies
